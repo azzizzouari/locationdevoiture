@@ -59,6 +59,7 @@ body{
     min-height:600px;
     background-repeat:no-repeat;
 	background-size:cover;
+    margin-top:80px;
     margin-left:80px;
     margin-right:80px;
 }
@@ -70,6 +71,9 @@ body{
 }
 .location h1{
     font-size: 1.5em;
+}
+.mapouter{
+    border:2px solid #f8b500;
 }
 /*local end*/
 /*articles begin*/
@@ -93,7 +97,9 @@ body{
 }
 .article .photo{
     height:200px;
+    width: 400px;
     float:left;
+    image-rendering: optimizeQuality;
 }
 .article .h{
     color:#f8b500;
@@ -158,12 +164,81 @@ footer input{
     width:60%;
 }
 .yellow{
-    font-size:18px;
+    margin-top:50px;
+    font-size:20px;
     color:#f8b500;
-
+    font-weight:bolder;
+}
+footer .yellow{
+    color:#f8b500;
+    font-weight:auto;
 }
 .fine{
     margin-top: 30px;
     color: whitesmoke;
 }
 /*footer end*/
+/*about begin*/
+.about{
+    border:2px solid black;
+    margin:80px;
+}
+.about .tit{
+    margin-left: 50px;
+}
+.about p{
+    margin-left: 80px;
+    margin-right:80px;
+}
+
+/*about end*/
+/*formulaire contact begin*/
+.contact{
+    border:2px solid black;
+    margin:80px;
+    display:flex;
+    justify-content: space-around;
+}
+.formtext{
+    display:inline-block;
+    width:30%;
+}
+.formform{
+    width:50%;
+}
+.formform input{
+    border:1px solid rgb(85, 85, 85);
+}
+#Mr{
+    margin-top:50px;
+    margin-left:5%;
+}
+.formulaire1 input{
+    width:40%;
+    height:35px;
+    margin-bottom:5%;
+    margin-left:5%;
+}
+.textarea{
+    width: 85%;
+    height: 150px;
+    margin-left:5%
+}
+
+.formulaire1{
+    display:flex;
+    flex-wrap: wrap;
+}
+.formform button{
+    width:20%;
+    height:40px;
+    background-color:#f8b500 ;
+    color:white;
+    position:relative;
+    left:420px;
+    top:40px;
+    margin-bottom:80px;
+}
+
+
+/*formulaire contact end*/
