@@ -2,7 +2,7 @@ function readmore() {
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none"&&btnText.innerHTML === "Lire la suite...") {
     btnText.innerHTML = "Lire moins";
     moreText.style.display = "inline";
   } 
