@@ -7,7 +7,10 @@
     }
 body{
     background-color: #f7f7f7;
-}
+}  
+button:hover {
+    opacity: 0.8;
+  }
 /*navbar begin*/
 .header{
     height:120px;
@@ -56,10 +59,9 @@ body{
 /*index hero start*/
 .hero{
     background:url("img/hero.jpg");
-    min-height:600px;
+    height:120vh;
     background-repeat:no-repeat;
 	background-size:cover;
-    margin-top:80px;
     margin-left:80px;
     margin-right:80px;
 }
@@ -95,11 +97,18 @@ body{
     padding:5px;
     font-size:16px;
 }
+.article h2{
+    color:black;
+    display:inline-block;
+    background-color:#f8b500;
+    padding:5px;
+    font-size:16px;
+}
 .article .photo{
     height:200px;
     width: 400px;
     float:left;
-    image-rendering: optimizeQuality;
+    object-fit: cover;
 }
 .article .h{
     color:#f8b500;
@@ -117,13 +126,13 @@ body{
 }
 .reserve{
     margin:auto;
-}.reserve input{
+}
+.reserve button{
     border:none;
     background-color: #f8b500;
     color:white;
     height:50px;
     width:120px;
-    border-radius: 10%;
 }
 table {
     margin-left:20px;
@@ -168,14 +177,19 @@ footer input{
     font-size:20px;
     color:#f8b500;
     font-weight:bolder;
+    text-decoration:underline;
 }
 footer .yellow{
     color:#f8b500;
     font-weight:auto;
+    margin:auto;
 }
 .fine{
     margin-top: 30px;
     color: whitesmoke;
+}
+.short a{
+    text-decoration:none;
 }
 /*footer end*/
 /*about begin*/
@@ -206,14 +220,12 @@ footer .yellow{
 .formform{
     width:50%;
 }
-.formform input{
-    border:1px solid rgb(85, 85, 85);
-}
 #Mr{
     margin-top:50px;
     margin-left:5%;
 }
 .formulaire1 input{
+    border:1px solid rgb(85, 85, 85);
     width:40%;
     height:35px;
     margin-bottom:5%;
@@ -222,7 +234,8 @@ footer .yellow{
 .textarea{
     width: 85%;
     height: 150px;
-    margin-left:5%
+    margin-left:5%;
+    border:1px solid rgb(85, 85, 85);
 }
 
 .formulaire1{
@@ -230,10 +243,12 @@ footer .yellow{
     flex-wrap: wrap;
 }
 .formform button{
-    width:20%;
-    height:40px;
-    background-color:#f8b500 ;
+
+    border:none;
+    background-color: #f8b500;
     color:white;
+    height:50px;
+    width:120px;
     position:relative;
     left:420px;
     top:40px;
@@ -242,3 +257,68 @@ footer .yellow{
 
 
 /*formulaire contact end*/
+/*info begin*/
+.info{
+    margin:80px;
+}
+.info .yellow{
+    margin:auto;
+}
+#more .yellow{
+    margin-left:20px;
+    
+    font-size: medium;
+    text-decoration: none;
+}
+.info p{
+    margin:50px;
+}
+.info button{
+    color:#f8b500;
+    font-weight: bold;
+    background-color: transparent;
+}
+#more {
+    display: none;
+}
+
+/*info end*/
+/*login begin*/
+.container{
+    margin:80px;
+    border:2px solid black;
+    min-height: 50vh;
+}
+input{
+    padding: 12px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    width:40%;
+    height:35px;
+}
+input[type=checkbox],input[type=radio]{
+    height:auto;
+    width:auto;
+}
+.center{
+    margin:50px 8% 50px 8%;
+}
+.container button{
+    border:none;
+    background-color: #f8b500;
+    color:white;
+    height:30px;
+    width:80px;
+
+}
+.container [type=text],.container [type=password]{
+    border:1px solid rgb(85, 85, 85);
+    width:40%;
+    height:35px;
+}  
+.container [type=radio],.container[type=checkbox]{
+    height:auto;
+    width:auto;
+}
+
+/*end*/
